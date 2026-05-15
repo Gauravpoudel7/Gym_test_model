@@ -1,0 +1,31 @@
+Project - how much Calories_Burned  
+
+non-numeric - Gender,Workout_Type
+
+
+
+Calories_Burned is almost normally distributed 
+
+most Calories_Burned: range 700-1100
+
+outliars: >1600 where Workout_Type are HIIT,Strength, max value= 1783 
+
+correlated with Session_Duration(higest),Experience_Level,Workout_Frequency
+
+Most outliars are on Workout_Type HIIT and Strength on more Calories burned side so we can assume that it this type effects Calories_Burned
+
+As less the body Fat_Percentage more Calories_Burned(-corr)
+
+lower age group can brun more Calories(-corr)
+
+columns im going to use for model :-
+Session_Duration,Experience_Level,Workout_Frequency,Fat_Percentage and workout type(HIIT and Strength)
+
+
+
+
+
+
+
+
+
