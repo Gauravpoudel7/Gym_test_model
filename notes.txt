@@ -20,6 +20,8 @@ lower age group can brun more Calories(-corr)
 
 columns im going to use for model :-
 Session_Duration,Experience_Level,Workout_Frequency,Fat_Percentage and workout type(HIIT and Strength)
+but as  Workout_Frequency and Experience_Level are semi categorical data with fix changes we can exclude it in linear regression
+
 
 
 
