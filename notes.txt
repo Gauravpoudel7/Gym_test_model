@@ -19,8 +19,38 @@ As less the body Fat_Percentage more Calories_Burned(-corr)
 lower age group can brun more Calories(-corr)
 
 columns im going to use for model :-
-Session_Duration,Experience_Level,Workout_Frequency,Fat_Percentage and workout type(HIIT and Strength)
-but as  Workout_Frequency and Experience_Level are semi categorical data with fix changes we can exclude it in linear regression
+Session_Duration,Experience_Level,Workout_Frequency,Fat_Percentage and workout type(HIIT and Strength) added AVG_BPM and Water_Intake 
+
+
+IN RF
+added water intake and Ave BPM features 
+Train Score: 0.9925955318604901 Test Score: 0.9488471606503122
+Slight Overfit 
+
+
+RFR
+MAE: 53.10482051282052
+R2 Score: 0.9488471606503122
+
+RFR+xgboost
+RF R2: 0.9490522649593234
+XGB R2: 0.9553698405240759
+Ensemble R2: 0.9545172410169048
+MAE: 51.53225570816137
+
+now,
+
+using Stacked Ensemble Model with Cross-Validation
+Random Forest
+XGBoost
+Meta-model (Linear Regression)
+Cross-validation to prevent overfitting
+
+
+Train R2: 0.9813415004735315
+Test R2: 0.955073790682407
+MAE: 51.69794870775047
+
 
 
 
